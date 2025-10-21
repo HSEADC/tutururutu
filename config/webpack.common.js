@@ -45,14 +45,14 @@ module.exports = {
         test: /\.(png|svg|jpg|jpeg|webp|gif)/,
         type: "asset/resource",
         generator: {
-          filename: "images/[hash] [ext] [query]",
+          filename: "images/[hash][ext][query]",
         },
       },
       {
         test: /\.(ttf|otf|woff|woff2)$/i,
         type: "asset/resource",
         generator: {
-          filename: "fonts/[hash] [ext] [query]",
+          filename: "fonts/[hash][ext][query]",
         },
       },
     ],
@@ -65,7 +65,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin(),
-    ...htmlPages
+    ...htmlPages,
     // new CopyPlugin({
     //   patterns: [
     //     { from: "source", to: "dest" },
