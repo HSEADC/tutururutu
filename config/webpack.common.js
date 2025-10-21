@@ -1,14 +1,12 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const htmlPages = require("./webpack.pages.js");
+
 const webpack = require("webpack");
 const path = require("path");
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const htmlPages = require("./webpack.pages");
-
-// const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
-  // mode: "development",
   entry: {
     index: "./src/javascripts/index.js",
   },
@@ -16,17 +14,8 @@ module.exports = {
     filename: "[name].js",
     path: path.resolve(".", "docs"),
   },
-  // output: {
-  //   path: path.resolve(__dirname, "dev_build"),
-  //   filename: "index.js",
-  // },
   module: {
     rules: [
-      {
-        test: /\.s?css$/,
-        exclude: /node_modules/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
-      },
       {
         test: /\.(js|jsx)$/i,
         exclude: /node_modules/,
@@ -38,11 +27,16 @@ module.exports = {
         },
       },
       {
+        test: /\.css$/,
+        exclude: /node_modules/,
+        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
+      },
+      {
         test: /\.html$/i,
         loader: "html-loader",
       },
       {
-        test: /\.(png|svg|jpg|jpeg|webp|gif)/,
+        test: /\.(png|jpg|jpeg|gif|svg)$/i,
         type: "asset/resource",
         generator: {
           filename: "images/[hash][ext][query]",
@@ -57,15 +51,13 @@ module.exports = {
       },
     ],
   },
+  plugins: [new MiniCssExtractPlugin(), ...htmlPages],
   optimization: {
-    minimizer: [
-      // For webpack v5, you can use the `...` syntax to extend existing minimizers (i.e. `terser-webpack-plugin`), uncomment the next line // `...`,
-      new CssMinimizerPlugin(),
-    ],
+    minimizer: [new CssMinimizerPlugin()],
   },
   plugins: [
     new MiniCssExtractPlugin(),
-    ...htmlPages,
+    ...htmlPages
     // new CopyPlugin({
     //   patterns: [
     //     { from: "source", to: "dest" },

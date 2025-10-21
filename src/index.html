@@ -8,18 +8,80 @@
 </head>
 
 <body>
-    <h1>Главная</h1>
+    <!-- <div class="links">
+        <h1>Главная</h1>
 
-    <h2>Категории</h2>
-    <ul>
-        <li><a href="pages/articles.html">Статьи</a></li>
-        <li><a href="pages/tests.html">Тесты</a></li>
-        <li><a href="pages/dictionary.html">Словарь</a></li>
-    </ul>
-    <h3>Статьи</h3>
-    <a href="pages/articles/plants.html">Статья 1</a>
-    <h3>Тесты</h3>
-    <a href="pages/tests/test1.html">Тест 1</a>
+        <h2>Фильмы</h2>
+        <a href="pages/films/film_1.html">Фильм 1</a>
+        <a href="pages/films/film_2.html">Фильм 2</a>
+    </div> -->
+
+    <div class="zaglushka">
+
+        <div class="text">
+            <div class="text_animation">
+                <div class="anim"></div>
+                <div class="anim"></div>
+                <div class="anim"></div>
+                <div class="anim"></div>
+            </div>
+            <div class="text_wrapper">
+                <h1>Привет! Мы&nbsp; LoreVault</h1>
+                <p>Расскажем и&nbsp; покажем вам всё о&nbsp; ваших любимых франшизах. Подписывайся, чтобы не&nbsp; пропустить!</p>
+
+                <div class="form">
+                    <form id="my-form" action="https://formspree.io/f/xrbyodda" method="POST">
+                        <!-- <label>Email:</label>
+                                                <input type="email" name="email" /> -->
+                        <!-- <label>Message:</label> -->
+                        <input type="text" name="message" />
+                        <button id="my-form-button">Отправить!</button>
+                        <p id="my-form-status"></p>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- можно добавить генерацию случайных цитат из фильма или случайных эдитов -->
+        <div class="image">
+            <img src="images/avatar-zaglushka.png" alt="avatar-zaglushka">
+        </div>
+    </div>
+
+    <script>
+        var form = document.getElementById("my-form");
+
+        async function handleSubmit(event) {
+            event.preventDefault();
+            var status = document.getElementById("my-form-status");
+            var data = new FormData(event.target);
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    status.innerHTML = "Спасибо за подписку на наш медиа-сервис!";
+                    form.reset()
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                        } else {
+                            status.innerHTML = "Oops! There was a problem submitting your form"
+                        }
+                    })
+                }
+            }).catch(error => {
+                status.innerHTML = "Oops! There was a problem submitting your form"
+            });
+        }
+        form.addEventListener("submit", handleSubmit)
+    </script>
 </body>
 
 </html>
