@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'PT Root UI';
     src: url('../fonts/pt-root-ui_bold.woff'), url('../fonts/pt-root-ui_bold.woff2');
     font-weight: 700;
@@ -20,4 +20,45 @@
     font-family: 'PT Root UI';
     src: url('../fonts/pt-root-ui_light.woff'), url('../fonts/pt-root-ui_light.woff2');
     font-weight: 300;
+} */
+@font-face {
+    font-family: 'WixMadeforDisplay';
+    src: url('../fonts/WixMadeforDisplay-ExtraBold.ttf');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'WixMadeforDisplay';
+    src: url('../fonts/WixMadeforDisplay-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'WixMadeforDisplay';
+    src: url('../fonts/WixMadeforDisplay-SemiBold.ttf');
+    font-weight: 600;
+}
+
+ @font-face {
+    font-family: 'WixMadeforDisplay';
+    src: url('../fonts/WixMadeforDisplay-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'WixMadeforDisplay';
+    src: url('../fonts/WixMadeforDisplay-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'RubikMonoOne';
+    src: url('../fonts/RubikMonoOne-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Onmark';
+    src: url('../fonts/Onmark_TRIAL-Regular.otf');
+    font-weight: 400;
 }
