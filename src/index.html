@@ -1,117 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
+    <title>Заглушка</title>
+    <!-- <link rel="shortcut icon" href="" type="image/x-icon"> -->
+
 </head>
 
-<body>
-    <!-- <div class="links">
-        <h1>Главная</h1>
-
-        <h2>Фильмы</h2>
-        <a href="pages/films/film_1.html">Фильм 1</a>
-        <a href="pages/films/film_2.html">Фильм 2</a>
-    </div> -->
+<body class="zaglushka-body">
     <header>
         <div class="pages">
-            <a href="">Заглушка</a>
-            <a href="">О нас</a>
+            <a href="index.html">Заглушка</a>
+            <a href="./pages/about.html">О нас</a>
         </div>
 
         <div class="circles">
-            <div class="circle"></div>
-            <div class="circle"></div>
+            <!-- <div class="circle"></div> -->
+            <a href="https://t.me/lorevaultt" target="_blank">
+                <div class="circle"></div>
+            </a>
         </div>
     </header>
 
     <div class="zaglushka">
-        <div class="logo"></div>
-
-        <h1 class="about about-first">О самом глубинном хранилище лоров</h1>
-
-        <div class="about about-second">то есть о нас,</div>
-        <div class="about about-third">ведь только мы&nbsp;поможем распутать и&nbsp;поглотить киноплёнку</div>
-
-        <div class="about-photo"></div>
-
-        <div class="description">
-            <p>
-                <span class="description-bold">Мы</span>&nbsp;&mdash; авторитетный и&nbsp;внимательный медиасервис
-                о&nbsp;кино, одновременно академичный и&nbsp;дружелюбный
-                фан‑ресурс.
-            </p>
-            <p>Настроение: любопытное, вдумчивое, слегка лабораторное (мы&nbsp;изучаем фильмы &laquo;под
-                микроскопом&raquo;),
-                но&nbsp;уютное для любого пользователя.</p>
+        <div class="logo-block">
+            <div class="description-logo">Хранилище самых глубоких кинолоров</div>
+            <div class="logo-zaglushka"></div>
         </div>
 
-        <div class="centered-description">
-            <p>Полный и&nbsp;аккуратно структурированный архив о&nbsp;каждом фильме&nbsp;&mdash; от&nbsp;синопсиса
-                до&nbsp;характеристик персонажей, от&nbsp;кадров до&nbsp;хедканонов&nbsp;&mdash; всё в&nbsp;одном месте,
-                без разброса
-                и&nbsp;догадок.</p>
+
+        <div class="form">
+            <form id="my-form" action="https://formspree.io/f/xrbyodda" method="POST">
+                <input type="email" name="email" placeholder="Email" />
+                <button id="my-form-button">Отправить!</button>
+                <p id="my-form-status"></p>
+            </form>
         </div>
 
-        <div class="why-us">почему именно мы?</div>
-        <section class="why-section">
-            <div class="fullness why-block">
-                <p class="why-block-head">Полнота</p>
-                <p class="why-block-text">Если фильм существует — у нас есть о нём всё.</p>
-                <p class="why-block-text">Содержание, персонажи, факты, хэдканоны и многое другое!</p>
-            </div>
-
-            <div class="structure why-block">
-                <p class="why-block-head">Структурированность</p>
-                <p class="why-block-text">Информация не в хаосе, а собрана по полностью интуитивно понятной системе.</p>
-                <p class="why-block-text">Каталог/Поиск → Фильм → Содержание/Статьи/Персонажи и так далее.</p>
-            </div>
-
-            <div class="reliability why-block">
-                <p class="why-block-head">Надёжность</p>
-                <p class="why-block-text">Только проверенная и достоверная информация (не относится к гипотезам и хэдканонам).</p>
-            </div>
-
-            <div class="respect why-block">
-                <p class="why-block-head">Уважение</p>
-                <p class="why-block-text">Спойлеры фильтруются и явно помечаются.</p>
-            </div>
-        </section>
-
-        <div class="close-text">присаживайтесь и&nbsp;узнайте, как всё было на&nbsp;самом деле</div>
-
-        <!-- <div class="text">
-            <div class="text_animation">
-                <div class="anim"></div>
-                <div class="anim"></div>
-                <div class="anim"></div>
-                <div class="anim"></div>
-            </div>
-            <div class="text_wrapper">
-                <h1>Привет! Мы&nbsp; LoreVault</h1>
-                <p>Расскажем и&nbsp; покажем вам всё о&nbsp; ваших любимых франшизах. Подписывайся, чтобы не&nbsp; пропустить!</p>
-
-                <div class="form">
-                    <form id="my-form" action="https://formspree.io/f/xrbyodda" method="POST"> -->
-        <!-- <label>Email:</label>
-                                                <input type="email" name="email" /> -->
-        <!-- <label>Message:</label> -->
-        <!-- <input type="text" name="message" />
-                        <button id="my-form-button">Отправить!</button>
-                        <p id="my-form-status"></p>
-                    </form>
-                </div>
-            </div>
-
-
-        </div> -->
-
-        <!-- можно добавить генерацию случайных цитат из фильма или случайных эдитов -->
-        <!-- <div class="image">
-            <img src="images/avatar-zaglushka.png" alt="avatar-zaglushka">
-        </div> -->
+        <div class="background-zaglushka"></div>
     </div>
 
     <script>

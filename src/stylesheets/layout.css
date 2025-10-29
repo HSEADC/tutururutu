@@ -23,8 +23,14 @@ header {
   font-size: 24rem;
   display: flex;
   justify-content: space-between;
-  position: relative;
+  position: fixed;
+  left: 0;
+  top: 0;
   z-index: 3;
+}
+
+.main {
+  margin-top: 80rem;
 }
 
 .pages {
@@ -40,14 +46,24 @@ header {
 .circle {
   width: 35rem;
   height: 35rem;
-  background-color: var(--white);
-  border-radius: 100%;
+  /* background-color: var(--white);
+  border-radius: 100%; */
+  background-image: url(../images/tg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 body {
-  font-size: 14rem;
-  background-color: var(--black);
+  position: relative;
+  /* font-size: 14rem; */
+  background-color: #000000;
   background-image: url(../images/background.png);
+  /* background-image: url(../images/background.png), url(../images/about-anim.gif); */
+
+  /* background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top, -100rem bottom; */
   overflow-x: hidden;
   color: var(--white);
 }
@@ -77,7 +93,10 @@ body {
 }
 
 .logo {
-  background-image: url(../images/logo.svg);
+  background-image: url(../images/logo-for-about.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 1483rem;
   height: 1253rem;
   position: absolute;
@@ -93,16 +112,16 @@ body {
   width: 502rem;
   height: 408rem;
   position: absolute;
-  margin-left: 435rem;
-  margin-top: -171rem;
-  z-index: 3;
+  margin-left: 354rem;
+  margin-top: -174rem;
+  z-index: 2;
 }
 
 .description {
   font-family: "WixMadeforDisplay";
   font-size: 19rem;
   font-weight: 400;
-  width: 30rem;
+  width: 305rem;
   margin-left: 1021rem;
   margin-top: -108rem;
 }
@@ -123,13 +142,13 @@ body {
   color: var(--white);
   width: 794rem;
   margin-left: 304rem;
-  margin-top: 223rem;
+  margin-top: 362rem;
 }
 
 .why-us {
   font-family: "RubikMonoOne";
   font-size: 48rem;
-  margin-top: 258rem;
+  margin-top: 295rem;
   margin-left: 352rem;
 }
 
@@ -161,6 +180,10 @@ body {
   width: 805rem;
 }
 
+.structure {
+  width: 805rem;
+}
+
 .close-text {
   width: 571rem;
   color: var(--white);
@@ -169,5 +192,94 @@ body {
   margin-left: 414rem;
   margin-top: 255rem;
   text-align: center;
-  margin-bottom: 154rem;
+  margin-bottom: 0rem;
+}
+
+.background-about {
+  background-image: url(../images/about-anim.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  position: absolute;
+  inset: 397rem 0 -397rem 0;
+  z-index: -1;
+  /* pointer-events: none; */
+  margin-bottom: 30rem;
+}
+
+.zaglushka {
+  margin-left: 67rem;
+  margin-top: 200rem;
+}
+
+.description-logo {
+  font-weight: 400;
+  font-family: "WixMadeforDisplay";
+  font-size: 20rem;
+  color: var(--white);
+  margin-bottom: -80rem;
+  margin-left: 7rem;
+}
+
+.logo-zaglushka {
+  background-image: url(../images/logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 748rem;
+  height: 282rem;
+}
+
+#my-form {
+  display: flex;
+}
+
+input[name="email"] {
+  width: 307rem;
+  height: 57rem;
+  border-radius: 20px;
+  border: 1px solid var(--white);
+  background: #202020;
+  padding: 20rem 0 13rem 21rem;
+}
+
+input[name="email"]::placeholder,
+input[name="email"]:autofill,
+input[name="email"]:focus,
+input[name="email"]:enabled {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "WixMadeforDisplay";
+}
+
+#my-form-button {
+  border-radius: 0 20px 20px 0;
+  background: #be0101;
+  width: 170rem;
+  height: 59rem;
+  margin-left: -20rem;
+  margin-top: -1rem;
+  font-weight: 400;
+  font-family: "WixMadeforDisplay";
+  font-size: 24rem;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.background-zaglushka {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/zaglushka-background.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  margin-top: -145rem;
+}
+
+.zaglushka-body {
+  overflow: hidden;
 }
