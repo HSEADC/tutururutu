@@ -46,8 +46,6 @@ header {
 .circle {
   width: 35rem;
   height: 35rem;
-  /* background-color: var(--white);
-  border-radius: 100%; */
   background-image: url(../images/tg.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -56,14 +54,8 @@ header {
 
 body {
   position: relative;
-  /* font-size: 14rem; */
   background-color: #000000;
   background-image: url(../images/background.png);
-  /* background-image: url(../images/background.png), url(../images/about-anim.gif); */
-
-  /* background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top, -100rem bottom; */
   overflow-x: hidden;
   color: var(--white);
 }
