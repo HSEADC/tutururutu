@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   html {
     font-size: calc(1vw / 3.9);
   }
@@ -49,4 +49,106 @@
   .zaglushka {
   position:relative;
 }
+} */
+@media screen and (max-width: 415px) {
+  /* html {
+    font-size: calc(1vw / 4.14);
+  } */
+
+  header {
+    height: 25px;
+    padding: 5px 11px 2px 11px;
+    font-size: 15px;
+  }
+
+  .circle {
+    width: 16px;
+    height: 16px;
+  }
+
+  .main {
+    margin-top: 35px;
+  }
+
+  .about {
+    font-size: 14px;
+    margin-left: 107px;
+  }
+
+  .about-second {
+    width: 100px;
+    margin-top: 338rem;
+  }
+
+  .about-third {
+    width: 131px;
+    margin-top: 206rem;
+  }
+
+  .about-photo {
+    width: 445rem;
+    height: 337rem;
+    margin-left: -65rem;
+    margin-top: -434rem;
+  }
+
+  .logo {
+    width: 1407rem;
+    margin-top: -90rem;
+  }
+
+  .description {
+    font-size: 10px;
+    width: 107px;
+    margin-top: -300rem;
+  }
+
+  .centered-description {
+    margin-top: -126rem;
+    font-size: 14px;
+    text-align: left;
+    margin-left: 226rem;
+  }
+
+  input[name="email"]::placeholder,
+  input[name="email"]:autofill,
+  input[name="email"]:focus,
+  input[name="email"]:enabled {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "WixMadeforDisplay";
+  }
+
+  input[name="email"] {
+    width: 567rem;
+    height: 125rem;
+    border-radius: 20px;
+    border: 1px solid var(--white);
+    background: #202020;
+    padding: 9rem 22px 15rem 45rem;
+  }
+  #my-form-button {
+    border-radius: 0 20px 20px 0;
+    background: #be0101;
+    width: 265rem;
+    height: 127rem;
+    margin-left: -76rem;
+    margin-top: -1rem;
+    font-weight: 400;
+    font-family: "WixMadeforDisplay";
+    font-size: 37rem;
+    color: var(--white);
+    cursor: pointer;
+  }
+
+  .logo-zaglushka {
+    width: 1207rem;
+    height: 461rem;
+  }
+
+  .description-logo {
+    font-size: 43rem;
+        margin-bottom: -113rem;
+  }
 }

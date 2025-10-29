@@ -11,6 +11,7 @@ const htmlPages = [
   createPages("./src/index.html", "./index.html"),
   createPages("./src/pages/films/film_1.html", "./pages/films/film_1.html"),
   createPages("./src/pages/films/film_2.html", "./pages/films/film_2.html"),
+  createPages("./src/pages/about.html", "./pages/about.html"),
 ];
 
 
