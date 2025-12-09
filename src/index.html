@@ -1,79 +1,112 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Grim" />
+    <meta
+      property="og:description"
+      content="Grim - медиа-сервис о популярных хоррор фандомах"
+    />
+    <meta
+      property="og:image"
+      content="https://ваш-сайт.com/images/preview.jpg"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ваш-сайт.com" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://annkomkova.github.io/static-site-08-25/"
+    />
+    <meta property="twitter:title" content="Grim" />
+    <meta
+      property="twitter:description"
+      content="Учебный проект, посвящённый углублённому изучению HTML, CSS и JS, знакомству с Webpack"
+    />
+    <meta
+      property="twitter:image"
+      content="https://raw.githubusercontent.com/annkomkova/static-site-08-25/refs/heads/main/src/images/meta/og-index.png"
+    />
+    <title>Тизер</title>
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Заглушка</title>
-    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon">
-
-</head>
-
-<body class="zaglushka-body">
+  <body class="zaglushka-body">
     <header>
-        <div class="pages">
-            <a href="index.html">Заглушка</a>
-            <a href="./pages/about.html">О нас</a>
-        </div>
+      <div class="pages">
+        <a href="index.html">Тизер</a>
+        <a href="./pages/about.html">О нас</a>
+        <a href="./pages/articles.html">Статьи</a>
+        <a href="./pages/cards.html">Карточки</a>
+        <a href="./pages/tests.html">Тесты</a>
+      </div>
 
-        <div class="circles">
-            <!-- <div class="circle"></div> -->
-            <a href="https://t.me/lorevaultt" target="_blank">
-                <div class="circle"></div>
-            </a>
-        </div>
+      <div class="circles">
+        <!-- <div class="circle"></div> -->
+        <a href="https://t.me/lorevaultt" target="_blank">
+          <div class="circle"></div>
+        </a>
+      </div>
     </header>
 
     <div class="zaglushka">
-        <div class="logo-block">
-            <div class="description-logo">Хранилище самых глубоких кинолоров</div>
-            <div class="logo-zaglushka"></div>
-        </div>
+      <div class="logo-block">
+        <div class="description-logo">Хранилище самых глубоких кинолоров</div>
+        <div class="logo-zaglushka"></div>
+      </div>
 
+      <div class="form">
+        <form
+          id="my-form"
+          action="https://formspree.io/f/xrbyodda"
+          method="POST"
+        >
+          <input type="email" name="email" placeholder="Email" />
+          <button id="my-form-button">Отправить!</button>
+          <p id="my-form-status"></p>
+        </form>
+      </div>
 
-        <div class="form">
-            <form id="my-form" action="https://formspree.io/f/xrbyodda" method="POST">
-                <input type="email" name="email" placeholder="Email" />
-                <button id="my-form-button">Отправить!</button>
-                <p id="my-form-status"></p>
-            </form>
-        </div>
-
-        <div class="background-zaglushka"></div>
+      <div class="background-zaglushka"></div>
     </div>
 
     <script>
-        var form = document.getElementById("my-form");
+      var form = document.getElementById("my-form");
 
-        async function handleSubmit(event) {
-            event.preventDefault();
-            var status = document.getElementById("my-form-status");
-            var data = new FormData(event.target);
-            fetch(event.target.action, {
-                method: form.method,
-                body: data,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            }).then(response => {
-                if (response.ok) {
-                    status.innerHTML = "Спасибо за подписку на наш медиа-сервис!";
-                    form.reset()
+      async function handleSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById("my-form-status");
+        var data = new FormData(event.target);
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+            Accept: "application/json",
+          },
+        })
+          .then((response) => {
+            if (response.ok) {
+              status.innerHTML = "Спасибо за подписку на наш медиа-сервис!";
+              form.reset();
+            } else {
+              response.json().then((data) => {
+                if (Object.hasOwn(data, "errors")) {
+                  status.innerHTML = data["errors"]
+                    .map((error) => error["message"])
+                    .join(", ");
                 } else {
-                    response.json().then(data => {
-                        if (Object.hasOwn(data, 'errors')) {
-                            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-                        } else {
-                            status.innerHTML = "Oops! There was a problem submitting your form"
-                        }
-                    })
+                  status.innerHTML =
+                    "Oops! There was a problem submitting your form";
                 }
-            }).catch(error => {
-                status.innerHTML = "Oops! There was a problem submitting your form"
-            });
-        }
-        form.addEventListener("submit", handleSubmit)
+              });
+            }
+          })
+          .catch((error) => {
+            status.innerHTML = "Oops! There was a problem submitting your form";
+          });
+      }
+      form.addEventListener("submit", handleSubmit);
     </script>
-</body>
-
+  </body>
 </html>
