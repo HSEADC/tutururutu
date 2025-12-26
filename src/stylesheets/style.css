@@ -1,5 +1,9 @@
-@import 'reset.css';
-@import 'fonts.css';
-@import 'layout.css';
-@import 'animation.css';
-@import 'adaptive.css';
+@import "reset.css";
+@import "fonts.css";
+@import "layout.css";
+@import "animation.css";
+@import "adaptive.css";
+@import "about.css";
+@import "articles.css";
+@import "cards.css";
+@import "article2.css";

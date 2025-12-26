@@ -22,43 +22,55 @@
     font-weight: 300;
 } */
 @font-face {
-    font-family: 'WixMadeforDisplay';
-    src: url('../fonts/WixMadeforDisplay-ExtraBold.ttf');
-    font-weight: 800;
+  font-family: "WixMadeforDisplay";
+  src: url("../fonts/WixMadeforDisplay-ExtraBold.ttf");
+  font-weight: 800;
 }
 
 @font-face {
-    font-family: 'WixMadeforDisplay';
-    src: url('../fonts/WixMadeforDisplay-Bold.ttf');
-    font-weight: 700;
+  font-family: "WixMadeforDisplay";
+  src: url("../fonts/WixMadeforDisplay-Bold.ttf");
+  font-weight: 700;
 }
 
 @font-face {
-    font-family: 'WixMadeforDisplay';
-    src: url('../fonts/WixMadeforDisplay-SemiBold.ttf');
-    font-weight: 600;
-}
-
- @font-face {
-    font-family: 'WixMadeforDisplay';
-    src: url('../fonts/WixMadeforDisplay-Medium.ttf');
-    font-weight: 500;
+  font-family: "WixMadeforDisplay";
+  src: url("../fonts/WixMadeforDisplay-SemiBold.ttf");
+  font-weight: 600;
 }
 
 @font-face {
-    font-family: 'WixMadeforDisplay';
-    src: url('../fonts/WixMadeforDisplay-Regular.ttf');
-    font-weight: 400;
+  font-family: "WixMadeforDisplay";
+  src: url("../fonts/WixMadeforDisplay-Medium.ttf");
+  font-weight: 500;
 }
 
 @font-face {
-    font-family: 'RubikMonoOne';
-    src: url('../fonts/RubikMonoOne-Regular.ttf');
-    font-weight: 400;
+  font-family: "WixMadeforDisplay";
+  src: url("../fonts/WixMadeforDisplay-Regular.ttf");
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: 'Onmark';
-    src: url('../fonts/Onmark_TRIAL-Regular.otf');
-    font-weight: 400;
+  font-family: "RubikMonoOne";
+  src: url("../fonts/RubikMonoOne-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Onmark";
+  src: url("../fonts/Onmark_TRIAL-Regular.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "SuisseIntl-Book";
+  src: url("../fonts/SuisseIntl-Book.ttf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "BebasNeueCyrillic";
+  src: url("../fonts/BebasNeueCyrillic.ttf");
+  font-weight: 700;
 }

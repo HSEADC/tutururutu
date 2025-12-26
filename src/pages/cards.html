@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
     <title>Grim — Медиа про лор крупных хоррор фандомов</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="title"
       content="Grim — Медиа про лор крупных хоррор фандомов "
@@ -47,25 +47,140 @@
       property="twitter:image"
       content="https://metatags.io/images/meta-tags.png"
     />
-    <title>Статьи</title>
-    <link rel="shortcut icon" href="../images/favicon.svg" type="image/x-icon"></head>
-</head>
-<body>
+    <link
+      rel="shortcut icon"
+      href="../images/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
     <header>
-      <div class="pages">
-        <a href="index.html">Тизер</a>
-        <a href="./pages/about.html">О нас</a>
-        <a href="./pages/articles.html">Статьи</a>
-        <a href="./pages/cards.html">Карточки</a>
-        <a href="./pages/tests.html">Тесты</a>
-      </div>
-
-      <div class="circles">
-        <!-- <div class="circle"></div> -->
-        <a href="https://t.me/lorevaultt" target="_blank">
-          <div class="circle"></div>
-        </a>
+      <div class="O_Header desktop">
+          <nav>
+          <a class="A_logoHeader" href="../index.html">
+            <img src="../images/A_logoHeader.webp" alt="" />
+          </a>
+          <div class="M_Navigation">
+            <a class="A_navigationHeader" href="about.html">О нас</a>
+            <a class="A_navigationHeader" href="articles.html">Статьи</a>
+            <a class="A_navigationHeader" href="cards.html">Карточки</a>
+          </div>
+        </nav>
+        </div>
+        
+        <!-- Мобильное меню -->
+        <div class="O_Header mobile">
+          <a class="A_logoHeader_mobile" href="../index.html">
+            <img src="../images/A_logoHeader.webp" alt="Логотип" />
+          </a>
+          
+          <!-- Бургер-иконка -->
+          <div class="hamMenu">
+            <div class="Q_menuIcon"></div>
+            <div class="Q_menuIcon"></div>
+            <div class="Q_menuIcon"></div>
+          </div>
+          
+          <!-- Оверлей-меню -->
+          <div class="menu-overlay">
+            <div class="overlay-header">
+              <img src="../images/A_logoHeader.webp" alt="Логотип" />
+              <div class="closeMenu">
+                <div class="Q_closeButton">×</div>
+              </div>
+            </div>
+            
+            <div class="A_inputHeader">
+              <nav class="M_menuItems">
+                <a class="A_navigationHeader_mobile" href="articles.html" class="A_H1">Статьи</a>
+                <a class="A_navigationHeader_mobile" href="cards.html" class="A_H1">Карточки</a>
+                <a class="A_navigationHeader_mobile" href="about.html" class="A_H1">О нас</a>
+              </nav>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
-</body>
+    <div class="M_mainText">
+      <h1 class="A_h1 desktop">Основано на реальных событиях?</h1>
+      <h3 class="A_h3">Интересные детали <br />о персонажах</h3>
+    </div>
+    <div class="W_cards">
+      <div class="S_popupContainer">
+        <div class="O_cardInfo">
+          <div class="Q_cardInfoImg">
+            <img src="../images/Q_cardInfoImg.webp" alt="" />
+          </div>
+          <div class="M_cardTexts card">
+            <h4 class="A_h4">Чёрный Филипп</h4>
+            <p class="A_p2">
+              Культовая фраза дьявола-козла «Wouldst <br />thou like to live
+              deliciously?» — прямая цитата<br />
+              из исторических протоколов инквизиции
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="S_popupContainer">
+        <div class="O_cardInfo">
+          <div class="Q_cardInfoImg">
+            <img src="../images/Q_cardInfoImgvecna.webp" alt="" />
+          </div>
+          <div class="M_cardTexts card">
+            <h4 class="A_h4">Векна</h4>
+            <p class="A_p2">
+              Имя и концепция персонажа взяты <br />из Dungeons & Dragons, где
+              Векна — <br />божество смерти и секретов
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="W_cards">
+      <div class="S_popupContainer">
+        <div class="O_cardInfo">
+          <div class="Q_cardInfoImg">
+            <img src="../images/Q_cardInfoImgface.webp" alt="" />
+          </div>
+          <div class="M_cardTexts card">
+            <h4 class="A_h4">Кожаное лицо</h4>
+            <p class="A_p2">
+              Персонаж и его семья-каннибалы <br />были вдохновлены реальным
+              <br />маньяком Эдом Гейном
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="S_popupContainer">
+        <div class="O_cardInfo">
+          <div class="Q_cardInfoImg">
+            <img src="../images/Q_cardInfoImgDustin.webp" alt="" />
+          </div>
+          <div class="M_cardTexts card">
+            <h4 class="A_h4">Дастин Хендерсон</h4>
+            <p class="A_p2">
+              Уникальная внешность Дастина обусловлена <br />редким генетическим
+              заболеванием актёра — <br />ключично-черепной дисплазией
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="S_Footer">
+      <div class="footer-content">
+        <a href="index.html" class="footer-logo">
+          <img src="/src/images/A_logoFooter.webp" alt="Логотип" />
+        </a>
+        <div class="team-section">
+          <h4 class="A_h4">Команда</h4>
+          <p class="A_p2">Баштарова Элина</p>
+          <p class="A_p2">Бекетова Анастасия</p>
+          <p class="A_p2">Криштофович Алиса</p>
+        </div>
+        <div class="social_icons">
+          <a class="tg_icon" href="t.me/grimchannellink"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
