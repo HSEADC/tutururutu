@@ -56,9 +56,14 @@ module.exports = {
   optimization: {
     minimizer: [new CssMinimizerPlugin()],
   },
-  resolve: {
-    fallback: {
-      stream: require.resolve("stream-browserify"),
-    },
-  },
+  plugins: [
+    new MiniCssExtractPlugin(),
+    ...htmlPages
+    // new CopyPlugin({
+    //   patterns: [
+    //     { from: "source", to: "dest" },
+    //     { from: "other", to: "public" },
+    //   ],
+    // }),
+  ],
 };
