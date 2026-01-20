@@ -1,112 +1,210 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <title>Grim — Медиа про лор крупных хоррор фандомов</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="Grim" />
+    <meta
+      name="title"
+      content="Grim — Медиа про лор крупных хоррор фандомов "
+    />
+    <meta
+      name="description"
+      content="Медиасервис, который собирает весь лор популярных хорроров в одном месте: понятно, структурно и без догадок."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hseadc.github.io/tutururutu/" />
+    <meta
+      property="og:title"
+      content="Grim — Медиа про лор крупных хоррор фандомов "
+    />
     <meta
       property="og:description"
-      content="Grim - медиа-сервис о популярных хоррор фандомах"
+      content="Медиасервис, который собирает весь лор популярных хорроров в одном месте: понятно, структурно и без догадок."
     />
     <meta
       property="og:image"
-      content="https://ваш-сайт.com/images/preview.jpg"
+      content="https://metatags.io/images/meta-tags.png"
     />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://ваш-сайт.com" />
+
+    <!-- X (Twitter) -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta
       property="twitter:url"
-      content="https://annkomkova.github.io/static-site-08-25/"
+      content="https://hseadc.github.io/tutururutu/"
     />
-    <meta property="twitter:title" content="Grim" />
+    <meta
+      property="twitter:title"
+      content="Grim — Медиа про лор крупных хоррор фандомов "
+    />
     <meta
       property="twitter:description"
-      content="Учебный проект, посвящённый углублённому изучению HTML, CSS и JS, знакомству с Webpack"
+      content="Медиасервис, который собирает весь лор популярных хорроров в одном месте: понятно, структурно и без догадок."
     />
     <meta
       property="twitter:image"
-      content="https://raw.githubusercontent.com/annkomkova/static-site-08-25/refs/heads/main/src/images/meta/og-index.png"
+      content="https://metatags.io/images/meta-tags.png"
     />
-    <title>Тизер</title>
-    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
   </head>
 
-  <body class="zaglushka-body">
+  <body>
     <header>
-      <div class="pages">
-        <a href="index.html">Тизер</a>
-        <a href="./pages/about.html">О нас</a>
-        <a href="./pages/articles.html">Статьи</a>
-        <a href="./pages/cards.html">Карточки</a>
-        <a href="./pages/tests.html">Тесты</a>
-      </div>
-
-      <div class="circles">
-        <!-- <div class="circle"></div> -->
-        <a href="https://t.me/lorevaultt" target="_blank">
-          <div class="circle"></div>
-        </a>
+        <div class="O_Header desktop">
+          <nav>
+            <a class="A_logoHeader" href="index.html">
+              <img src="images/A_logoHeader.webp" alt="Логотип" />
+            </a>
+            <div class="M_Navigation">
+              <a class="A_navigationHeader" href="pages/about.html">О нас</a>
+              <a class="A_navigationHeader" href="pages/articles.html">Статьи</a>
+              <a class="A_navigationHeader" href="pages/cards.html">Карточки</a>
+            </div>
+          </nav>
+        </div>
+        
+        <!-- Мобильное меню -->
+        <div class="O_Header mobile">
+          <a class="A_logoHeader_mobile" href="index.html">
+            <img src="images/A_logoHeader.webp" alt="Логотип" />
+          </a>
+          
+          <!-- Бургер-иконка -->
+          <div class="hamMenu">
+            <div class="Q_menuIcon"></div>
+            <div class="Q_menuIcon"></div>
+            <div class="Q_menuIcon"></div>
+          </div>
+          
+          <!-- Оверлей-меню -->
+          <div class="menu-overlay">
+            <div class="overlay-header">
+              <img src="images/A_logoHeader.webp" alt="Логотип" />
+              <div class="closeMenu">
+                <div class="Q_closeButton">×</div>
+              </div>
+            </div>
+            
+            <div class="A_inputHeader">
+              <nav class="M_menuItems">
+                <a class="A_navigationHeader_mobile" href="pages/articles.html" class="A_H1">Статьи</a>
+                <a class="A_navigationHeader_mobile" href="pages/cards.html" class="A_H1">Карточки</a>
+                <a class="A_navigationHeader_mobile" href="pages/about.html" class="A_H1">О нас</a>
+              </nav>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
-
-    <div class="zaglushka">
-      <div class="logo-block">
-        <div class="description-logo">Хранилище самых глубоких кинолоров</div>
-        <div class="logo-zaglushka"></div>
-      </div>
-
-      <div class="form">
-        <form
-          id="my-form"
-          action="https://formspree.io/f/xrbyodda"
-          method="POST"
-        >
-          <input type="email" name="email" placeholder="Email" />
-          <button id="my-form-button">Отправить!</button>
-          <p id="my-form-status"></p>
-        </form>
-      </div>
-
-      <div class="background-zaglushka"></div>
+    <div class="M_mainText">
+      <h1 class="A_h1 desktop">Запутались в лоре <br />и фанатских теориях?</h1>
+      <h3 class="A_h3">
+        Grim — медиасервис <br />
+        по ключевым хоррор вселенным
+      </h3>
     </div>
 
-    <script>
-      var form = document.getElementById("my-form");
-
-      async function handleSubmit(event) {
-        event.preventDefault();
-        var status = document.getElementById("my-form-status");
-        var data = new FormData(event.target);
-        fetch(event.target.action, {
-          method: form.method,
-          body: data,
-          headers: {
-            Accept: "application/json",
-          },
-        })
-          .then((response) => {
-            if (response.ok) {
-              status.innerHTML = "Спасибо за подписку на наш медиа-сервис!";
-              form.reset();
-            } else {
-              response.json().then((data) => {
-                if (Object.hasOwn(data, "errors")) {
-                  status.innerHTML = data["errors"]
-                    .map((error) => error["message"])
-                    .join(", ");
-                } else {
-                  status.innerHTML =
-                    "Oops! There was a problem submitting your form";
-                }
-              });
-            }
-          })
-          .catch((error) => {
-            status.innerHTML = "Oops! There was a problem submitting your form";
-          });
-      }
-      form.addEventListener("submit", handleSubmit);
-    </script>
+    <div class="M_background">
+      <div class="Q-borderUpper"></div>
+      <div class="Q-background">
+        <img src="images/M_background.webp" alt="" />
+      </div>
+      <div class="Q-borderDown"></div>
+    </div>
+    <div class="O_chapter">
+      <h1 class="A_h1">Статьи</h1>
+    </div>
+    <div class="W_articles">
+      <a href="pages/articles/article2.html" class="W_cardArticle">
+        <div class="O_cardTextGroup">
+          <div class="M_cardArticles">
+            <p class="A_p">18.12.2025</p>
+            <h3 class="A_h3">
+              Джойс Байерс: плохая мать или жертва обстоятельств?
+            </h3>
+            <div class="A_articleLevelTags">
+              <p class="A_p_tag">анализ персонажей</p>
+            </div>
+          </div>
+        </div>
+        <div class="Q_cardTextImg">
+          <img src="images/Q_cardTextImgarticle.webp" alt="" />
+        </div>
+      </a>
+    </div>
+    <div class="O_chapter">
+      <h1 class="A_h1">Карточки</h1>
+    </div>
+    <div class="W_cards">
+      <div class="S_popupContainer">
+        <div class="O_cardInfo">
+          <div class="Q_cardInfoImg">
+            <img src="images/Q_cardInfoImg.webp" alt="" />
+          </div>
+          <div class="M_cardTexts card">
+            <h4 class="A_h4">Чёрный Филипп</h4>
+            <p class="A_p2">
+              Культовая фраза дьявола-козла «Wouldst <br />thou like to live
+              deliciously?» — прямая цитата<br />
+              из исторических протоколов инквизиции
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="S_popupContainer">
+        <div class="O_cardInfo">
+          <div class="Q_cardInfoImg">
+            <img src="images/Q_cardInfoImgvecna.webp" alt="" />
+          </div>
+          <div class="M_cardTexts card">
+            <h4 class="A_h4">Векна</h4>
+            <p class="A_p2">
+              Имя и концепция персонажа взяты <br />из Dungeons & Dragons, где
+              Векна — <br />божество смерти и секретов
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="O_chapter">
+      <h1 class="A_h1">Тесты</h1>
+    </div>
+    <div class="W_comingsoon">
+      <div class="O_cardcomingsoon">
+        <div class="M_cardcomingsoon">
+          <h3 class="A_h3">Готовим кое-что <br />интересное</h3>
+          <p class="A_p">Вы узнаете себя <br />с новой стороны</p>
+        </div>
+      </div>
+    </div>
+    <div class="M_secondPageText">
+      <h1 class="A_h1">Обсуждай лор<br> вместе с нами</h1>
+      <div class="O_cardMedia">
+        <div class="Q_mediaLogos">
+        </div>
+        <a href="https://t.me/grimchannellink"
+          ><button class="A_mainButton">Подписаться</button></a
+        >
+      </div>
+    </div>
+    </div>
+    <footer class="S_Footer">
+      <div class="footer-content">
+        <a href="index.html" class="footer-logo">
+          <img src="/src/images/A_logoFooter.webp" alt="Логотип" />
+        </a>
+        <div class="team-section">
+          <h4 class="A_h4">Команда</h4>
+          <p class="A_p2">Баштарова Элина</p>
+          <p class="A_p2">Бекетова Анастасия</p>
+          <p class="A_p2">Криштофович Алиса</p>
+        </div>
+        <div class="social_icons">
+          <a class="tg_icon" href="https://t.me/grimchannellink"></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

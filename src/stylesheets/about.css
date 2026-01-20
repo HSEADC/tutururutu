@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  position: relative;
+  background-color: #11141b;
+  overflow-x: hidden;
+}
+
+.W_backgroundabout {
+  width: 100%;
+  position: relative;
+  margin-top: -2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.S_Footer_about {
+  width: 100%;
+  padding: 2.5rem;
+  border-radius: 2.5rem 2.5rem 0 0;
+  border: none;
+  background-image: url(../images/M_background_footer.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+}
+
+@media only screen and (max-width: 767px) and (min-width: 360px) {
+  .M_mainText_about {
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    padding: 18.4vw 0;
+  }
+}
